@@ -33,11 +33,12 @@
     padding-bottom: 9px;
     border-width: 1;
     border-radius: 2px;
-    margin-right: 8;
+    margin-right: 30;
     cursor: pointer;
     transition: background-color 0.15s,
         color 0.15s;
     vertical-align: top;
+    
 }
 
 .join-button:hover {
@@ -63,6 +64,7 @@
     cursor: pointer;
     transition: box-shadow 0.15s;
     vertical-align: top;
+    margin-left: 30;
 }
 
 .tweet-button:hover {
