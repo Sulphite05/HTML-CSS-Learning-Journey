@@ -8,83 +8,28 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="project-styles/general.css">
+    <link rel="stylesheet" href="project-styles/header.css">
+    <link rel="stylesheet" href="project-styles/video.css">
 
     <style>
-        p {
-            font-family: Roboto, Arial, Helvetica, sans-serif;
-            /* margin: 0 0 0 0; */
-            /* top right bottom left */
-            margin: 0 0 0 0;
-        }
+        
 
-        .search-bar {
-            display: block;
-            font-size: 20px;
-            margin-left: 12px;
-        }
-
-        .video-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            column-gap: 16px;
-            row-gap: 40px;
-        }
-
-        .vid-preview {
-            width: 100%;
-        }
-
-        .thumbnail-row {
-            margin-bottom: 12px;
-        }
-
-        .thumbnail {
-            width: 100%;
-            /* height: 300px;
-                object-fit: contain;  when image does not fit the area 
-                object-position: right;
-                border-width: 2px;
-                border-style: solid;
-                border-color: red; */
-        }
-
-        .vid-info-grid {
-            /* 1. display and 2. cols */
-            display: grid;
-            grid-template-columns: 50px 1fr;
-            column-gap: 10px;
-        }
-
-        .profile-picture {
-            width: 100%;
-            border-radius: 40px;
-            /* fills up the container i.e channel-picture */
-        }
-
-        .video-title {
-            font-size: 14px;
-            font-weight: 500;
-            /* medium 500 Roboto */
-            line-height: 20px;
-            margin-bottom: 12px;
-        }
-
-        .video-author,
-        .video-stats {
-            font-size: 12px;
-            color: rgb(96, 96, 96);
-        }
-
-        /* multiple classes */
-
-        .video-author {
-            margin-bottom: 4px;
-        }
+        
     </style>
 </head>
 
 <body>
-    <input class="search-bar" type="text" placeholder="Search">
+    <div class="header">
+        <div class="left-section">left</div>
+        <div class="middle-section">
+            <input class="search-bar" type="text" placeholder="Search">
+        </div>
+        <div class="right-section">right</div>
+
+    </div>
+
 
     <div class="video-grid">
         <div class="vid-preview">
@@ -247,12 +192,12 @@
             <div class="thumbnail-row">
                 <img class="thumbnail" src="thumbnails/thumbnail-10.webp">
             </div>
-        
+
             <div class="vid-info-grid">
                 <div>
                     <img class="profile-picture" src="channel-pictures/channel-10.jpeg">
                 </div>
-        
+
                 <div>
                     <p class="video-title">How The World's Largest Cruise Ship Makes 30,000 Meals Every Day</p>
                     <p class="video-author">Business Insider</p>
@@ -260,7 +205,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="vid-preview">
             <div class="thumbnail-row">
                 <img class="thumbnail" src="thumbnails/thumbnail-11.webp">
@@ -269,7 +214,7 @@
                 <div>
                     <img class="profile-picture" src="channel-pictures/channel-11.jpeg">
                 </div>
-        
+
                 <div>
                     <p class="video-title">Dubai's Crazy Underwater Train and Other Things #Only in Dubai</p>
                     <p class="video-author">Destination Tips</p>
@@ -277,7 +222,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="vid-preview">
             <div class="thumbnail-row">
                 <img class="thumbnail" src="thumbnails/thumbnail-12.webp">
@@ -286,7 +231,7 @@
                 <div>
                     <img class="profile-picture" src="channel-pictures/channel-12.jpeg">
                 </div>
-        
+
                 <div>
                     <p class="video-title">What would happen if you didn’t drink water? - Mia Nacamulli</p>
                     <p class="video-author">TED-Ed</p>
@@ -294,7 +239,7 @@
                 </div>
             </div>
         </div>
-        </div>
+    </div>
     </div>
 
 </body>

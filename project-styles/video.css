@@ -1,0 +1,57 @@
+.video-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 40px;
+}
+
+.vid-preview {
+    width: 100%;
+}
+
+.thumbnail-row {
+    margin-bottom: 12px;
+}
+
+.thumbnail {
+    width: 100%;
+    /* height: 300px;
+                object-fit: contain;  when image does not fit the area 
+                object-position: right;
+                border-width: 2px;
+                border-style: solid;
+                border-color: red; */
+}
+
+.vid-info-grid {
+    /* 1. display and 2. cols */
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    column-gap: 10px;
+}
+
+.profile-picture {
+    width: 100%;
+    border-radius: 40px;
+    /* fills up the container i.e channel-picture */
+}
+
+.video-title {
+    font-size: 14px;
+    font-weight: 500;
+    /* medium 500 Roboto */
+    line-height: 20px;
+    margin-bottom: 12px;
+}
+
+.video-author,
+.video-stats {
+    font-size: 12px;
+    color: rgb(96, 96, 96);
+}
+
+/* multiple classes */
+
+.video-author {
+    margin-bottom: 4px;
+}
