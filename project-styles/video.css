@@ -3,6 +3,26 @@
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 16px;
     row-gap: 40px;
+    /* text-decoration: underline; this will get inherited to all the elements in the grid */
+    /* inheritance usually only works with font properties*/
+}
+
+@media (max-width: 870px){
+    .video-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:871px) and (max-width: 999px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1000px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
 }
 
 .vid-preview {
@@ -10,7 +30,24 @@
 }
 
 .thumbnail-row {
-    margin-bottom: 12px;
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.video-time {
+    font-size: 12px;
+    font-weight: 500; 
+    padding: 4px;
+    /* applies padding on all four sides(1 arg) */
+    /* first one applies to top/bottom second applies to left/right(2 args) */
+    /* top right bottom left in case of 4 args */
+    /* margin works the same way as padding */
+    border-radius: 2px;
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    right: 4px;
 }
 
 .thumbnail {
@@ -26,7 +63,7 @@
 .vid-info-grid {
     /* 1. display and 2. cols */
     display: grid;
-    grid-template-columns: 50px 1fr;
+    grid-template-columns: 36px 1fr;
     column-gap: 10px;
 }
 
@@ -41,7 +78,7 @@
     font-weight: 500;
     /* medium 500 Roboto */
     line-height: 20px;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 }
 
 .video-author,

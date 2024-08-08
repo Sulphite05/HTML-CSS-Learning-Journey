@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Position Practice</title>
+</head>
+
+<body style="
+    height: 3000px;
+    padding-top: 60px;
+    padding-left: 80px;">
+
+    <div style="
+    background-color: black;
+    color: white;
+    position: fixed;
+    top: 10px; 
+    bottom: 370px;
+    left: 50px;
+    right: 50px;
+    height: 50px;
+    z-index: 1;">header</div>
+
+
+    <div style="
+    background-color: green;
+    color: white;
+    position: fixed;
+    left: 0;
+    background-origin: 0;
+    top: 50px;
+    bottom: 0px;
+    width: 72px;
+    z-index: 2;">
+        sidebar
+        <div style="
+            position: absolute;
+            background-color: red;
+            color: white;
+            right: 0px;
+            top: 0px;">
+            x
+        </div>
+        <!-- this new element is placed relative to sidebar now -->
+    </div>
+
+    <div style="
+    position: absolute;
+    background-color: red;
+    color: white;
+    right: 10px;
+    top: 10px;">
+        absolute
+    </div>
+
+    <div style="
+    background-color: lightblue;
+    height: 200px;
+    width: 200px;
+    position: static;">div 1</div>
+
+    <div style="
+    background-color: lightpink;
+    height: 200px;
+    width: 200px;
+    position: relative;">div 2
+    <div style="
+        position: absolute;
+        background-color: red;
+        color: white;
+        right: 10px;
+        top: 10px;">
+        absolute
+    </div></div>
+</body>
+
+</html>
+
+<!-- fixed -> placed on browser window -->
+
+<!-- absolute -> placed on page -->
+
+<!-- z-index determines which element to place on whom -->
+
+<!-- we put absolute positions inside relative positions to move our labels position with the page -->
